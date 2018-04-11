@@ -1,0 +1,88 @@
+body{
+	background: linear-gradient(to right,red,yellow)
+}
+ 
+ form{
+ 	background-color: red;
+ 	width: 400px;
+ 	height: 450px;
+ 	background: linear-gradient(to right ,lightgreen,blue)
+ }
+
+ .screen {
+ 	border-radius: 15px;
+ 	width: 320px;
+ 	height: 60px;
+ 	font-size: 40px;
+ 	border-width: 15px;
+ 	background-color: rgb(221,244,255);
+ 	border-color: rgb(91,173,255);
+ 	font-style: italic;
+}
+
+.mybutton {
+ 	width: 60px;
+ 	height: 60px;
+ 	font-size: 30px;
+ 	border-radius: 20px;
+	border-width: 10px;
+	background-color: rgb(210,210,210); 
+	border-color: rgb(151,255,255);
+ }
+ 
+ .mybuttonC{
+ 	width: 60px;
+ 	height: 60px;
+ 	font-size: 30px;
+ 	background-color: rgb(255,28,28); 
+ 	border-radius: 20px;
+ 	border-width: 10px;
+ 	border-color: rgb(151,255,255);
+ 	text-align: center;
+
+ }
+ .mybuttonOn{
+ 		width: 60px;
+ 	    height: 60px;
+ 	    font-size: 20px;
+ 	    background-color: rgb(215,215,0);
+ 	    border-radius: 20px;
+ 	    border-width: 10px;
+ 	    border-color: rgb(151,255,255);
+ }
+
+.mybuttonOff{
+	width: 60px;
+	height: 60px;
+	font-size: 20px;
+	border-radius: 20px;
+	border-width: 10px;
+	background-color: rgb(210,210,210); 
+	border-color: rgb(151,255,255);
+
+}
+.mybuttonRes{
+	 	width: 60px;
+ 	height: 60px;
+ 	font-size: 20px;
+ 	border-radius: 20px;
+	border-width: 10px;
+	background-color: rgb(210,210,210); 
+	border-color: rgb(151,255,255);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

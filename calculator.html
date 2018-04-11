@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <center>
+    <form class="calculator">
+	
+</head>
+<link rel="stylesheet" type="text/css" href="calculatorstyle.css">
+<body>
+    <title>  calculator </title>
+	
+	<h1> CalCulator </h1>
+	<br>
+	<input type="text" class="screen" name="input_box">
+	 <br>
+	 <input onclick="ButtonClick(7)" type="button" class="mybutton" name="button7" value="7"/> 	
+     <input onclick="ButtonClick(8)" type="button" class="mybutton" name="button8" value="8"/> 
+	 <input onclick="ButtonClick(9)" type="button" class="mybutton" name="button9" value="9"/>
+     <input onclick="ButtonClick('/')" type="button" class="mybutton" name="button/" value="/"/> 
+     <input onclick="ButtonClick('On')" type="button" class="mybuttonOn" name="btnOn" value="On"/>
+
+
+	 <br>
+	 <input onclick="ButtonClick(4)" type="button" class="mybutton" name="button4" value="4"/> 
+     <input onclick="ButtonClick(5)" type="button" class="mybutton" name="button5" value="5"/> 
+     <input onclick="ButtonClick(6)" type="button" class="mybutton" name="button6" value="6"/> 
+     <input onclick="ButtonClick('*')" type="button" class="mybutton" name="btnmultiply*" value="*"/>
+     <input onclick="ButtonClick('Off')" type="button" class="mybuttonOff" name="btnOff" value="Off"/> 
+     <br>
+     <input onclick="ButtonClick(1)" type="button" class="mybutton" name="button1" value="1"/> 
+     <input onclick="ButtonClick(2)" type="button" class="mybutton" name="button2" value="2"/> 
+     <input onclick="ButtonClick(3)" type="button" class="mybutton" name="button3" value="3"/> 
+     <input onclick="ButtonClick('-')" type="button" class="mybutton" name="btnminus" value="-"/> 
+     <input onclick="ButtonClick("Restart")" type="button" class="mybuttonRes" name="btnRestart" value= " res "/>
+     <br>
+     <input type="button" onclick="ButtonClick(0)" class="mybutton" name="button0" value="0"> 
+     <input onclick="ButtonClick('.')" type="button" class="mybutton" name="potbtn." value="."> 
+     <input onclick="ButtonClick('=')" type="button" class="mybutton" name="btnequal" value="="> 
+     <input onclick="ButtonClick('+')" type="button" class="mybutton" name="btnadd" value="+">
+     <input onclick="ButtonClick('C')" type="button" class="mybuttonC" name="btnC" value=" C "> 
+
+
+
+
+
+
+</form>
+</center>
+</body>
+
+
+
+
+<script type="text/javascript">
+Num1 = 0;
+Result = 0;
+operator ="";
+isDotUsed = false;
+
+function ButtonClick(x){
+    var screen = document.querySelector('.screen');
+    if(x == 'On'){
+        screen.value= 0;
+     }else if(x == '='){
+      if(Operator != ""){
+        if(Operator == '+'){
+          Result = +screen.value + +Num1;
+          screen.value = Result;
+        }else if(Operator == '-'){
+          Result = +Num1 - +screen.value;
+          screen.value = Result;
+        }else if(Operator == '*'){
+          Result = +Num1 * +screen.value;
+          screen.value = Result;
+        }else if(Operator == '/'){
+          Result = +Num1 / +screen.value;
+          screen.value = Result;
+        }
+      }
+    }else if(x == '/'){
+      Num1 = screen.value;
+      Operator = "/";
+      screen.value = "";
+    }else if(x == '*'){
+      Num1 = screen.value;
+      Operator = "*";
+      screen.value = "";
+    }else if(x == '-'){
+      Num1 = screen.value;
+      Operator = "-";
+      screen.value = "";
+    }else if(x == '+'){
+      Num1 = screen.value;
+      Operator = "+";
+      screen.value = "";
+    }else if (x == "C"){
+        screen.value = "";
+        Num1 = 0;
+        Result = 0;
+        operator ="";
+        isDotUsed = false;
+    }else if(x == "Off"){
+        screen.value = "";
+    }else if(x == "."){
+       if(!isDotUsed){
+            screen.value = screen.value + x;
+            isDotUsed = true;
+       }
+    }else{
+       screen.value = screen.value + x; 
+    } 
+}
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
